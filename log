@@ -24,3 +24,14 @@ hashmap.c:70:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__att
       | ^
 Compilation failed
 e193f8b
+Fri 09 Sep 2022 05:13:57 PM UTC: 
+ hashmap.c | 20 ++++++++++++++++----
+ 1 file changed, 16 insertions(+), 4 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:48:23: error: statement with no effect [-Werror=unused-value]
+   48 |       map->buckets[i] == newPair;
+      |       ~~~~~~~~~~~~~~~~^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a9317a6
