@@ -8,3 +8,11 @@ hashmap.c:70:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__att
       | ^
 Compilation failed
 70b7550
+Fri 09 Sep 2022 05:04:07 PM UTC: 
+In file included from test.c:4:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:70:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘}’ token
+   70 | }
+      | ^
+Compilation failed
+664269d
