@@ -53,3 +53,13 @@ Fri 09 Sep 2022 05:35:52 PM UTC:
  tests:  11|2
 total_score: 50/70
 777ab26
+Sat 10 Sep 2022 09:41:56 PM UTC: 
+ hashmap.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:4:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:114:5: error: expected expression before ‘}’ token
+  114 |     }
+      |     ^
+Compilation failed
+8b6fc2d
