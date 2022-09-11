@@ -118,3 +118,14 @@ hashmap.c:72:54: error: ‘value’ undeclared (first use in this function)
 hashmap.c:72:54: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 59c5753
+Sun 11 Sep 2022 06:01:36 PM UTC: 
+ hashmap.c | 18 +++++++++---------
+ 1 file changed, 9 insertions(+), 9 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:66:17: error: assignment to ‘Pair **’ from incompatible pointer type ‘Pair *’ [-Werror=incompatible-pointer-types]
+   66 |     map->buckets=(Pair*)calloc(map->capacity,sizeof(Pair));
+      |                 ^
+cc1: all warnings being treated as errors
+Compilation failed
+28785ca
