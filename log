@@ -99,3 +99,22 @@ hashmap.c:72:54: error: ‘value’ undeclared (first use in this function)
 hashmap.c:72:54: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 94777cc
+Sun 11 Sep 2022 05:58:09 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:67:24: error: too many arguments to function ‘malloc’
+   67 | map->buckets = (Pair**)malloc(map->capacity,sizeof(Pair*));
+      |                        ^~~~~~
+In file included from test.c:2:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdlib.h:539:14: note: declared here
+  539 | extern void *malloc (size_t __size) __THROW __attribute_malloc__
+      |              ^~~~~~
+In file included from test.c:4:
+hashmap.c:72:54: error: ‘value’ undeclared (first use in this function)
+   72 |       insertMap(map,auxbuckets[i]->key,auxbuckets[i]-value);
+      |                                                      ^~~~~
+hashmap.c:72:54: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+59c5753

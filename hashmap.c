@@ -62,7 +62,7 @@ void enlarge(HashMap * map) {
     enlarge_called = 1; //no borrar (testing purposes)
   Pair ** auxbuckets = map->buckets;
   size_t auxcap = map->capacity;
-  map->capacity*=2
+  map->capacity*=2;
 
 map->buckets = (Pair**)malloc(map->capacity,sizeof(Pair*));
   map->size = 0;
