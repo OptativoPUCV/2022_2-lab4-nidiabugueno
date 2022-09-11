@@ -120,6 +120,9 @@ Pair * firstMap(HashMap * map) {
 }
 
 Pair * nextMap(HashMap * map) {
+  for(int i=map->current+1; i<map->capacity;i++){
+    
+  }
 
     return NULL;
 }
